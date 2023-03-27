@@ -238,11 +238,11 @@ body {
 /* =================================== MAIN ============================== */
 
 .main__header__container {
-    background-image: url(/img/фффффф.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/фффффф.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: 100% 100%; */
-
+    position: relative;
 }
 
 .self.header__container {
@@ -304,31 +304,31 @@ body {
 
 /* ======================================== MANWOOMAN-------------------------- */
 
-.main__manwoom__container {
-    background-image: url(/img/глаза.jpg);
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 100% 50%;
-    width: 50%;
-    height: 1600px;
+.self.main__studio__container {}
 
-}
+.main__studio__container {}
 
-.main__manwoom__container .main_sloy {
+.main__studio__container .main_sloy {
     display: flex;
 }
 
-.main__manwoom__container .main_sloy .sloy_1 {
-    background-image: url(/img/глаза.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.main__studio__container .posit img {
+    position: absolute;
+    top: 97%;
+    left: 0;
 }
 
-.main__manwoom__container .main_sloy .sloy_2 {
-    background-image: url(/img/awesome-man-with-tattoos-posing-in-shadows-over-black-background_613910-8023.avif);
+.main__studio__container .main_sloy img {
+    height: 300px;
+}
+
+.main__studio__container .main_sloy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.self.manwoom__container {
+.self.studio__container {
     padding-bottom: 69.5rem;
 }
