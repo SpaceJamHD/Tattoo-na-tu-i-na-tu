@@ -113,10 +113,11 @@ body {
 
 .nav__menu a {
     color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav__menu a:hover {
-    color: #000;
+    color: #fce38a;
 }
 
 .nav__menu ul {
@@ -255,6 +256,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 250px;
+    letter-spacing: 3.5px;
 }
 
 .main__header__container .text h1 {
@@ -270,17 +272,42 @@ body {
 }
 
 .main__header__container .description p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Vidaloka', serif;
+    line-height: 35.2px;
     font-size: 20px;
     text-align-last: center;
     font-weight: lighter;
+    letter-spacing: 3.5px;
+}
+
+.main__header__container .text a button {
+    margin: 100px 0 0 0px;
+    background-color: #ECECEC;
+    color: #2B2B2B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 25px 60px 25px 60px;
+    border-radius: 88px;
+}
+
+.main__header__container .text a button:hover {
+    background-color: darkblue;
+    color: #000;
+    transition: 1.1s;
 }
 
 /* ============================== Time ====================== */
 
 .main__header__container .raspisanie {
     display: flex;
-    padding-top: 400px;
+    padding-top: 180px;
     justify-content: space-between;
 }
 
@@ -426,4 +453,213 @@ body {
     right: 350px;
     top: 320px;
 
+}
+
+
+/* =======================================        CARD              ============================= */
+
+
+/*=============================================================== About */
+
+.card {
+    margin: 80px -15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__item {
+    width: 33.33333%;
+    padding: 0 15px;
+}
+
+.card__inner {
+    position: relative;
+    background-color: #354744;
+}
+
+.card__inner:hover .card__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card__inner:hover .card__img img {
+    opacity: .1;
+}
+
+.card__inner:hover .card__text {
+    opacity: 1;
+}
+
+.card__img {
+    background: linear-gradient(to bottom, #2B2B2B, #fce38a);
+    transition: transform .2s linear;
+}
+
+.card__img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: opacity .1s linear;
+}
+
+.card__text {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0. -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+.card__info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card__name {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Vidaloka';
+}
+
+.card__prof {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+
+/* ===================================   Main-text ================================= */
+
+.self.section__header {
+    margin-top: 100px;
+}
+
+.section__header {
+    margin-top: 200px;
+    width: 100%;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.section__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+
+    background-color: #f38181;
+}
+
+.section__text {
+    font-size: 15px;
+    color: #999;
+}
+
+.social__item {
+    width: 55px;
+    height: 55px;
+    padding: 12px 10px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+    line-height: 1;
+    transition: background .1s linear, color .1s linear;
+}
+
+.social__item:hover {
+    background: #2B2B2B;
+}
+
+/* =====================================   FOOTER ----------------------- */
+
+.main__footer__container .footer__menu .menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+    margin-left: 29%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.main__footer__container .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.main__footer__container .icons span {
+    background: linear-gradient(to bottom, #2B2B2B, #6a5296);
+    padding: 15px;
+    border-radius: 100%;
+    color: #f2f2f2;
+    opacity: 0.6;
+
+}
+
+.main__footer__container .icons span:hover {
+    background: linear-gradient(to bottom, #614444, #000000);
+    /* transform: scale(-1, 1); */
+    transform: scale(2);
+    transition: 1s;
+    opacity: 1;
+}
+
+.main__footer__container .icons a img:hover {}
+
+.main__footer__container .footer__menu .menu ul li a {
+    color: #fff;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+
+.self.main__footer__container .footer__copyright {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1.2rem 0;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.self.active {
+    color: #fce38a;
+}
+
+.main__footer__container .menu li a :hover {
+    color: blueviolet;
 }
