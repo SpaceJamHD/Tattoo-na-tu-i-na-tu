@@ -239,7 +239,7 @@ body {
 /* =================================== MAIN ============================== */
 
 .main__header__container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/фффффф.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/ффффффффффффффффффффффффффффффффффывфывфывыфвфыв.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: 100% 100%; */
@@ -346,8 +346,8 @@ body {
 }
 
 .main__studio__container .main_sloy img {
-    height: 337px;
-    width: 19%;
+    height: 330px;
+    width: 59%;
     margin-top: -54px;
 }
 
